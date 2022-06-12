@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.promineotech.jeep.controller.FetchJeepTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.852 s <<< FAILURE! - in com.promineotech.jeep.controller.FetchJeepTest
+testThatJeepsAreReturnedWhenAValidModelAndTrimAreSupplied  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level.root' to org.springframework.boot.logging.LogLevel
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [org.springframework.boot.logging.LogLevel] for value 'warn '[com.promineotech]':debug'; nested exception is java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.warn '[com.promineotech]':debug
+Caused by: java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.warn '[com.promineotech]':debug
+
